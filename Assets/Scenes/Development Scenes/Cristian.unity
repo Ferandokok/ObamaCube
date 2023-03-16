@@ -2317,7 +2317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Name
+  m_text: Obama Cube
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
   m_sharedMaterial: {fileID: 1194104980888164860, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
