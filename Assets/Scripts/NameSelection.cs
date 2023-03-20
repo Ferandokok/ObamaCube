@@ -9,7 +9,7 @@ public class NameSelection : MonoBehaviour
     public TMP_InputField nameInput;
     public TMP_Text playerNameText;
     public Button submitButton;
-    public int maxPlayers = 4;
+    public int maxPlayers = 5;
     public List<string> playerNames = new List<string>();
 
     private int currentPlayer = 0;
