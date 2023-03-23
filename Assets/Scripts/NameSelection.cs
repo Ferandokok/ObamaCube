@@ -13,10 +13,8 @@ public class NameSelection : MonoBehaviour
     public TMP_Text playerAmount;
 
     public Button submitButton;
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
+
+
     public int maxPlayers = 5;
     public List<string> playerNames = new List<string>();
 
