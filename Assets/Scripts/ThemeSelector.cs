@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,8 +6,11 @@ public class ThemeSelector : MonoBehaviour
     Image img;
     Button btn;
 
+    public int themeNumber;
+
     [SerializeField] Sprite selected;
     [SerializeField] Sprite unselected;
+    [SerializeField] SelectedThemes selectedThemes;
 
     bool isSelected;
 
@@ -27,11 +28,15 @@ public class ThemeSelector : MonoBehaviour
         {
             isSelected = false;
             img.sprite = unselected;
+
+            selectedThemes.themes[themeNumber] = false;
         }
         else
         {
             isSelected = true;
             img.sprite = selected;
+
+            selectedThemes.themes[themeNumber] = true;
         }
     }
 }
