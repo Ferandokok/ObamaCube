@@ -892,6 +892,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543160409}
   m_CullTransparentMesh: 1
+--- !u!1 &604703967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604703969}
+  - component: {fileID: 604703968}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &604703968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604703967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fe234d8764004448d40019826add55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customWord: []
+--- !u!4 &604703969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604703967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 963.9775, y: 573.87463, z: 1.7972813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615376387
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +948,7 @@ GameObject:
   - component: {fileID: 615376389}
   - component: {fileID: 615376388}
   m_Layer: 0
-  m_Name: CodeTest
+  m_Name: ArrayWords
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,6 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 4900000, guid: 7e0129e4c0cd003498df3def22521a7e, type: 3}
   textPromts: []
+  listWords: 
 --- !u!4 &615376389
 Transform:
   m_ObjectHideFlags: 0
@@ -949,7 +995,7 @@ GameObject:
   - component: {fileID: 629902215}
   - component: {fileID: 629902216}
   m_Layer: 5
-  m_Name: HostFull (1)
+  m_Name: HostFull Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1144,7 +1190,7 @@ GameObject:
   - component: {fileID: 822567724}
   - component: {fileID: 822567725}
   m_Layer: 5
-  m_Name: HostFull
+  m_Name: HostFull Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
