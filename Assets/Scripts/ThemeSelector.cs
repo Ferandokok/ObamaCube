@@ -1,20 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ThemeSelector : MonoBehaviour
 {
-    int theme = 0;
+    Image img;
+    Button btn;
+
+    [SerializeField] Sprite selected;
+    [SerializeField] Sprite unselected;
+
+    bool isSelected;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        img = GetComponent<Image>();
+        btn = GetComponent<Button>();
+        btn.onClick.AddListener(SwitchSelecMode);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SwitchSelecMode()
     {
-        
+        if (isSelected)
+        {
+            isSelected = false;
+            img.sprite = unselected;
+        }
+        else
+        {
+            isSelected = true;
+            img.sprite = selected;
+        }
     }
 }
