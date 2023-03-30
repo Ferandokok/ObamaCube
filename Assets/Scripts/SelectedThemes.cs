@@ -15,4 +15,9 @@ public class SelectedThemes : MonoBehaviour
             themes[i] = false;
         }
     }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 }
