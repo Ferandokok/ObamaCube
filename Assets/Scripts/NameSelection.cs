@@ -14,11 +14,10 @@ public class NameSelection : MonoBehaviour
 
     public Button submitButton;
 
-
     public int maxPlayers = 5;
     public List<string> playerNames = new List<string>();
 
-    
+    public VoteSystem voteSystem;
 
     private int currentPlayer = 0;
 
@@ -30,15 +29,15 @@ public class NameSelection : MonoBehaviour
 
     void SubmitName()
     {
-        
+
         if (nameInput.text != "")
         {
             playerNames.Add(nameInput.text);
             currentPlayer++;
-            
+
             if (currentPlayer < maxPlayers)
             {
-                
+
                 //playerNameText.text = "Player " + (currentPlayer + 1);
                 nameInput.text = "";
             }
@@ -47,6 +46,9 @@ public class NameSelection : MonoBehaviour
                 playerNameText.text = "All players selected";
                 nameInput.gameObject.SetActive(false);
                 submitButton.gameObject.SetActive(false);
+
+                // assign player names to VoteSystem
+                voteSystem.playerNames = playerNames;
             }
             playersList.text = "";
             foreach (string playerName in playerNames)

@@ -1,47 +1,49 @@
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
 
-public class VotingSystem : MonoBehaviour
+public class VoteSystem : MonoBehaviour
 {
-    public TMP_Text voteInstructions;
-    public TMP_Text voteResults;
+    public TMP_Text p1;
+    public TMP_Text p2;
+    public TMP_Text p3;
+    public TMP_Text p4;
+    public TMP_Text p5;
 
-    private List<string> playerNames = new List<string>();
-    private Dictionary<string, int> voteCount = new Dictionary<string, int>();
+    public List<string> playerNames;
 
-    public void InitializeVoting(List<string> names)
+    // Start is called before the first frame update
+    void Start()
     {
-        playerNames = names;
-        voteInstructions.text = "Vote for a player:";
-        foreach (string playerName in playerNames)
+        for (int i = 0; i < playerNames.Count; i++)
         {
-            voteCount[playerName] = 0;
-        }
-    }
-
-    public void CastVote(string playerName)
-    {
-        if (playerNames.Contains(playerName))
-        {
-            voteCount[playerName]++;
-            voteInstructions.text = "Vote for another player or press submit to finish voting.";
-        }
-    }
-
-    public void SubmitVotes()
-    {
-        int maxVotes = 0;
-        string winner = "";
-        foreach (KeyValuePair<string, int> entry in voteCount)
-        {
-            if (entry.Value > maxVotes)
+            switch (i)
             {
-                maxVotes = entry.Value;
-                winner = entry.Key;
+                case 0:
+                    p1.text = playerNames[i];
+                    break;
+                case 1:
+                    p2.text = playerNames[i];
+                    break;
+                case 2:
+                    p3.text = playerNames[i];
+                    break;
+                case 3:
+                    p4.text = playerNames[i];
+                    break;
+                case 4:
+                    p5.text = playerNames[i];
+                    break;
+                default:
+                    break;
             }
         }
-        voteResults.text = "The winner is: " + winner + " with " + maxVotes + " votes!";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }
