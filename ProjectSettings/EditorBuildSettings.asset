@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Development Scenes/Cristian.unity
+    guid: f4c10e1905adbca45b3a45ce8453d139
+  - enabled: 1
     path: Assets/Scenes/Development Scenes/Stef.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
