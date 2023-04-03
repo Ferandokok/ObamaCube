@@ -23,7 +23,7 @@ public class ReadTextFile : MonoBehaviour
     void Awake()
     {
         readTextFile(textFile[6]);
-        if (true)
+        if (GameObject.Find("SelectedThemes"))
         {
         selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
         }
