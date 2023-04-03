@@ -28,8 +28,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
-        
+
+    public void sceneTom()
+    {
+        SceneManager.LoadScene("Tom");
     }
+}
+        
+    
 
 
 
