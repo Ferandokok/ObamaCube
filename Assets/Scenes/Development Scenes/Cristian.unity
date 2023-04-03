@@ -215,7 +215,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu, play menu, options menu, game selection menu, player selection
     menu, credits menu, visuals menu, sound menu, controls menu, background animation,
-    host animation, all UI assets, ui SFX, Main menu script
+    host animation, all UI assets, ui SFX, Main menu script, settings menu script,
+    graphics settings, resolution settings, fullscreen toggle, music & button sliders
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
   m_sharedMaterial: {fileID: 1194104980888164860, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
