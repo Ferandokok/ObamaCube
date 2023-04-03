@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Development Scenes/Tom2.unity
     guid: 81c9521826d8b344badebd8e4fbe7f52
+  - enabled: 1
+    path: Assets/Scenes/Game/ThemeSelector.unity
+    guid: afc9fc8e3ac1fb54ba7742c297eb71b5
   m_configObjects: {}

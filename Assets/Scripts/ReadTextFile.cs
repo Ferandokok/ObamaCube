@@ -32,12 +32,15 @@ public class ReadTextFile : MonoBehaviour
     // Start is called before the first frame updates
     void Start()
     {
-        for (int i = 0; i < selectedThemes.themes.Length; i++)
+        if (GameObject.Find("SelectedThemes"))
         {
-            if (selectedThemes.themes[i])
+            for (int i = 0; i < selectedThemes.themes.Length; i++)
             {
-                readTextFile(textFile[i]);
-            }
+                if (selectedThemes.themes[i])
+                {
+                    readTextFile(textFile[i]);
+                }
+            }   
         }
     }
 
