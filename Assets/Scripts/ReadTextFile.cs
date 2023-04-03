@@ -11,8 +11,10 @@ public class ReadTextFile : MonoBehaviour
 
 
     [SerializeField]
-    public TextAsset[] textFile;
+    public TextAsset[] wordsFile;
+    public TextAsset[] promptsFile;
     List<string> listWords = new List<string>();
+    List<string> listPrompt = new List<string>();
 
     [SerializeField]
     public string[] arrayWords;
@@ -22,7 +24,9 @@ public class ReadTextFile : MonoBehaviour
 
     void Awake()
     {
-        readTextFile(textFile[6]);
+        ReadTextFileWords(wordsFile[6]);
+        ReadTextFilePrompt(promptsFile[6]); 
+
         if (GameObject.Find("SelectedThemes"))
         {
         selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
@@ -38,16 +42,22 @@ public class ReadTextFile : MonoBehaviour
             {
                 if (selectedThemes.themes[i])
                 {
-                    readTextFile(textFile[i]);
+                    ReadTextFileWords(wordsFile[i]);
+                    ReadTextFilePrompt(wordsFile[i]);
                 }
             }   
         }
     }
 
 
-    void readTextFile(TextAsset words)
+    void ReadTextFileWords(TextAsset words)
     {
         arrayWords = words.text.Split('\n');
         listWords.AddRange(arrayWords);
+    }
+    void ReadTextFilePrompt(TextAsset words)
+    {
+        arrayWords = words.text.Split('\n');
+        listPrompt.AddRange(arrayWords);
     }
 }
