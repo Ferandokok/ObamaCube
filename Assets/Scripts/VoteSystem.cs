@@ -19,6 +19,11 @@ public class VoteSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+    public void Update()
+    {
+
         for (int i = 0; i < playerNames.Count; i++)
         {
             switch (i)
@@ -45,7 +50,6 @@ public class VoteSystem : MonoBehaviour
             votes[playerNames[i]] = 0;
         }
     }
-
     public void Vote(string playerName)
     {
         votes[playerName]++;
@@ -64,7 +68,73 @@ public class VoteSystem : MonoBehaviour
                 winner = pair.Key;
             }
         }
-
+        ShowVoteResults();
         return winner;
+    }
+    public void VoteForPlayer1()
+    {
+        if (playerNames.Count > 0)
+        {
+            FindObjectOfType<VoteSystem>().Vote(playerNames[0]);
+        }
+    }
+    public void VoteForPlayer2()
+    {
+        if (playerNames.Count > 1)
+        {
+            FindObjectOfType<VoteSystem>().Vote(playerNames[1]);
+        }
+    }
+    public void VoteForPlayer3()
+    {
+        if (playerNames.Count > 2)
+        {
+            FindObjectOfType<VoteSystem>().Vote(playerNames[2]);
+        }
+    }
+    public void VoteForPlayer4()
+    {
+        if (playerNames.Count > 3)
+        {
+            FindObjectOfType<VoteSystem>().Vote(playerNames[3]);
+        }
+    }
+    public void VoteForPlayer5()
+    {
+        FindObjectOfType<VoteSystem>().Vote(playerNames[4]);
+    }
+    public void ShowVoteResults()
+    {
+        foreach (KeyValuePair<string, int> pair in votes)
+        {
+            string playerName = pair.Key;
+            int numVotes = pair.Value;
+
+            // Find the TMP_Text component for the player with this name
+            TMP_Text playerText = null;
+            switch (playerName)
+            {
+                case "Player1":
+                    playerText = p1;
+                    break;
+                case "Player2":
+                    playerText = p2;
+                    break;
+                case "Player3":
+                    playerText = p3;
+                    break;
+                case "Player4":
+                    playerText = p4;
+                    break;
+                case "Player5":
+                    playerText = p5;
+                    break;
+                default:
+                    break;
+            }
+
+            
+            playerText.text = playerName + " (" + numVotes + " votes)";
+        }
     }
 }

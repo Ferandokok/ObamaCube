@@ -17,7 +17,7 @@ public class NameSelection : MonoBehaviour
     public int maxPlayers = 5;
     public List<string> playerNames = new List<string>();
 
-    public VoteSystem voteSystem;
+    public VoteSystem VoteSystem;
 
     private int currentPlayer = 0;
 
@@ -29,27 +29,12 @@ public class NameSelection : MonoBehaviour
 
     void SubmitName()
     {
-
         if (nameInput.text != "")
         {
             playerNames.Add(nameInput.text);
             currentPlayer++;
+            nameInput.text = "";
 
-            if (currentPlayer < maxPlayers)
-            {
-
-                //playerNameText.text = "Player " + (currentPlayer + 1);
-                nameInput.text = "";
-            }
-            else
-            {
-                playerNameText.text = "All players selected";
-                nameInput.gameObject.SetActive(false);
-                submitButton.gameObject.SetActive(false);
-
-                // assign player names to VoteSystem
-                voteSystem.playerNames = playerNames;
-            }
             playersList.text = "";
             foreach (string playerName in playerNames)
             {
@@ -57,6 +42,19 @@ public class NameSelection : MonoBehaviour
             }
             playerAmount.text = "Players: " + playerNames.Count;
 
+            if (currentPlayer >= maxPlayers)
+            {
+                playerNameText.text = "All players selected";
+                nameInput.gameObject.SetActive(false);
+                submitButton.gameObject.SetActive(false);
+
+                // assign player names to VoteSystem
+                VoteSystem.playerNames = playerNames;
+            }
+            else
+            {
+                //playerNameText.text = "Player " + (currentPlayer + 1);
+            }
         }
     }
 }
