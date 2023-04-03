@@ -1126,7 +1126,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Info on credit / all achievements.
+  m_text: 'Theme selector
+
+    Send over selected themes to lobby scene'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
   m_sharedMaterial: {fileID: 1194104980888164860, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
@@ -1153,8 +1155,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
