@@ -7,19 +7,36 @@ using System.IO;
 public class ReadTextFile : MonoBehaviour
 {
 
+    SelectedThemes selectedThemes;
+
+
     [SerializeField]
-    public TextAsset textFile;
+    public TextAsset[] textFile;
+    List<string> listWords = new List<string>();
 
     [SerializeField]
-    public string[] textPromts;
+    public string[] arrayWords;
 
-    public string listWords;
+    
 
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        //selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
+    }
+
+    // Start is called before the first frame updates
     void Start()
     {
-        textFile = Resources.Load<TextAsset>("Resources/Words/" + listWords + ".txt");
+        //for (int i = 0; i < selectedThemes.themes.Length; i++)
+        //{
+        //    if (selectedThemes.themes[i])
+        //    {
+
+        //    }
+        //}
+        readTextFile(textFile[0]);
+        readTextFile(textFile[1]);
     }
 
     // Update is called once per frame
@@ -28,8 +45,9 @@ public class ReadTextFile : MonoBehaviour
        
     }
 
-    void readTextFile(TextAsset Promts)
+    void readTextFile(TextAsset words)
     {
-        textPromts = textFile.text.Split('\n');
+        arrayWords = words.text.Split('\n');
+        listWords.AddRange(arrayWords);
     }
 }
