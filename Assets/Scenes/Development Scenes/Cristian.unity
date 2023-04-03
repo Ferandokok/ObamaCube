@@ -21223,7 +21223,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1763793520}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: sceneTom
+        m_MethodName: sceneThemeSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

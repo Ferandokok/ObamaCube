@@ -29,10 +29,12 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void sceneTom()
+    public void sceneThemeSelect()
     {
-        SceneManager.LoadScene("Tom");
+        SceneManager.LoadScene("ThemeSelector");
     }
+
+
 }
         
     
