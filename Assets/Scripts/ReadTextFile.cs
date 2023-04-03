@@ -22,28 +22,22 @@ public class ReadTextFile : MonoBehaviour
 
     void Awake()
     {
-        //selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
+        readTextFile(textFile[6]);
+        selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
     }
 
     // Start is called before the first frame updates
     void Start()
     {
-        //for (int i = 0; i < selectedThemes.themes.Length; i++)
-        //{
-        //    if (selectedThemes.themes[i])
-        //    {
-
-        //    }
-        //}
-        readTextFile(textFile[0]);
-        readTextFile(textFile[1]);
+        for (int i = 0; i < selectedThemes.themes.Length; i++)
+        {
+            if (selectedThemes.themes[i])
+            {
+                readTextFile(textFile[i]);
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 
     void readTextFile(TextAsset words)
     {
