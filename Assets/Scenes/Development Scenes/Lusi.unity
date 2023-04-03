@@ -425,59 +425,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70450170}
   m_CullTransparentMesh: 1
---- !u!1 &247845312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 247845314}
-  - component: {fileID: 247845313}
-  m_Layer: 0
-  m_Name: ArraryPrompts
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &247845313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247845312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9179d903d2508d4683f2b634075fb21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textFile:
-  - {fileID: 4900000, guid: 17fa03d156c1a47459f73080a35a3d50, type: 3}
-  - {fileID: 4900000, guid: c5ec2ff67a4d2f443a2adf0afaf25fb6, type: 3}
-  - {fileID: 4900000, guid: 85f07d2a7a9992845aadd10a34cd7768, type: 3}
-  - {fileID: 4900000, guid: 5a4381d00e006344082ae9df4291c516, type: 3}
-  - {fileID: 4900000, guid: e8fa04968f9b59245ad5fde196e8634d, type: 3}
-  - {fileID: 4900000, guid: adef8cf22f738774c88f37beb6385289, type: 3}
-  - {fileID: 4900000, guid: ebc46852c4a8b804fb74b044528a8d9c, type: 3}
-  arrayWords: []
---- !u!4 &247845314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247845312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &313189442
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,60 +585,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458385211}
   m_CullTransparentMesh: 1
---- !u!1 &465243313
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 465243315}
-  - component: {fileID: 465243314}
-  m_Layer: 0
-  m_Name: ArrayWords
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &465243314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465243313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9179d903d2508d4683f2b634075fb21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textFile:
-  - {fileID: 4900000, guid: 7b32b09c4735c1c4e8325ee403e11895, type: 3}
-  - {fileID: 4900000, guid: 5153fc9adbe4cdd4ea7f608092c721b4, type: 3}
-  - {fileID: 4900000, guid: 60f275dba90ae5e4da23eb885a96dd96, type: 3}
-  - {fileID: 4900000, guid: 25f7d0b1258d8e14ab3a73e8900e808e, type: 3}
-  - {fileID: 4900000, guid: 867781661f7e46245bd827502028bfdf, type: 3}
-  - {fileID: 4900000, guid: ba3a1c35a36447d489795a3f73250c15, type: 3}
-  - {fileID: 4900000, guid: 621735a3bf34fb4419eb6b29d469712c, type: 3}
-  - {fileID: 4900000, guid: 544fd57275a362741a992d111566384a, type: 3}
-  arrayWords: []
---- !u!4 &465243315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465243313}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484546470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,8 +3381,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1614946557}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: sceneTransition
-        m_Mode: 5
+        m_MethodName: Menu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3972,6 +3865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prompts: {fileID: 0}
+  words: {fileID: 0}
+  promptCountainer: {fileID: 0}
+  wordCountainer: {fileID: 0}
 --- !u!1 &1977475936
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Cristian");
     }
 
     public void sceneTransition(string sceneName)
