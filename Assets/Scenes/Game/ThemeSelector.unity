@@ -353,7 +353,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 92817608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620490405}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &92817610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -478,7 +490,7 @@ GameObject:
   - component: {fileID: 152809692}
   - component: {fileID: 152809693}
   m_Layer: 0
-  m_Name: Back Button
+  m_Name: Sound 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,7 +792,7 @@ GameObject:
   - component: {fileID: 183163812}
   - component: {fileID: 183163813}
   m_Layer: 0
-  m_Name: Cards Game
+  m_Name: Sound 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -908,7 +920,7 @@ GameObject:
   - component: {fileID: 217688428}
   - component: {fileID: 217688429}
   m_Layer: 0
-  m_Name: Audio Button
+  m_Name: Sound 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1125,7 +1137,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 233975499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 183163813}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &233975499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,13 +1515,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1265829104}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1728,7 +1752,7 @@ GameObject:
   - component: {fileID: 620490404}
   - component: {fileID: 620490405}
   m_Layer: 0
-  m_Name: Credits Button
+  m_Name: Sound 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,7 +2236,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 744865840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1919866565}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &744865840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,7 +2776,7 @@ GameObject:
   - component: {fileID: 1265829103}
   - component: {fileID: 1265829104}
   m_Layer: 0
-  m_Name: Play Button
+  m_Name: Sound 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3003,7 +3039,7 @@ GameObject:
   - component: {fileID: 1343379210}
   - component: {fileID: 1343379211}
   m_Layer: 0
-  m_Name: Controls Button
+  m_Name: Sound 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3427,7 +3463,7 @@ GameObject:
   - component: {fileID: 1590953905}
   - component: {fileID: 1590953906}
   m_Layer: 0
-  m_Name: Graphics Button
+  m_Name: Sound 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3899,13 +3935,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 152809693}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4104,7 +4140,7 @@ GameObject:
   - component: {fileID: 1919866564}
   - component: {fileID: 1919866565}
   m_Layer: 0
-  m_Name: Options Button
+  m_Name: Sound 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4314,7 +4350,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2088010730}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 217688429}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2088010732
 CanvasRenderer:
   m_ObjectHideFlags: 0
