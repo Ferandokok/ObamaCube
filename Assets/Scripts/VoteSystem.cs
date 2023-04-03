@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VoteSystem : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class VoteSystem : MonoBehaviour
     public TMP_Text p5;
 
     public List<string> playerNames;
+
+    private Dictionary<string, int> votes = new Dictionary<string, int>();
 
     // Start is called before the first frame update
     void Start()
@@ -38,12 +41,30 @@ public class VoteSystem : MonoBehaviour
                 default:
                     break;
             }
+
+            votes[playerNames[i]] = 0;
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Vote(string playerName)
     {
+        votes[playerName]++;
+    }
 
+    public string GetWinner()
+    {
+        string winner = "";
+        int highestVotes = 0;
+
+        foreach (KeyValuePair<string, int> pair in votes)
+        {
+            if (pair.Value > highestVotes)
+            {
+                highestVotes = pair.Value;
+                winner = pair.Key;
+            }
+        }
+
+        return winner;
     }
 }
