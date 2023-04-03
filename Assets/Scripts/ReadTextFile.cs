@@ -23,7 +23,10 @@ public class ReadTextFile : MonoBehaviour
     void Awake()
     {
         readTextFile(textFile[6]);
+        if (true)
+        {
         selectedThemes = GameObject.Find("SelectedThemes").GetComponent<SelectedThemes>();
+        }
     }
 
     // Start is called before the first frame updates
