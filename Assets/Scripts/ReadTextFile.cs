@@ -18,6 +18,8 @@ public class ReadTextFile : MonoBehaviour
 
     [SerializeField]
     public string[] arrayWords;
+    public string[] arrayPrompt;
+    
 
     
 
@@ -55,9 +57,9 @@ public class ReadTextFile : MonoBehaviour
         arrayWords = words.text.Split('\n');
         listWords.AddRange(arrayWords);
     }
-    void ReadTextFilePrompt(TextAsset words)
+    void ReadTextFilePrompt(TextAsset prompt)
     {
-        arrayWords = words.text.Split('\n');
+        arrayPrompt = prompt.text.Split('\n');
         listPrompt.AddRange(arrayWords);
     }
 }

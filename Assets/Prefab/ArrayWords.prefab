@@ -44,13 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9179d903d2508d4683f2b634075fb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textFile:
-  - {fileID: 4900000, guid: 7b32b09c4735c1c4e8325ee403e11895, type: 3}
-  - {fileID: 4900000, guid: 5153fc9adbe4cdd4ea7f608092c721b4, type: 3}
+  wordsFile:
+  - {fileID: 4900000, guid: 544fd57275a362741a992d111566384a, type: 3}
+  - {fileID: 4900000, guid: ba3a1c35a36447d489795a3f73250c15, type: 3}
+  - {fileID: 4900000, guid: 621735a3bf34fb4419eb6b29d469712c, type: 3}
   - {fileID: 4900000, guid: 60f275dba90ae5e4da23eb885a96dd96, type: 3}
   - {fileID: 4900000, guid: 25f7d0b1258d8e14ab3a73e8900e808e, type: 3}
   - {fileID: 4900000, guid: 867781661f7e46245bd827502028bfdf, type: 3}
-  - {fileID: 4900000, guid: ba3a1c35a36447d489795a3f73250c15, type: 3}
-  - {fileID: 4900000, guid: 621735a3bf34fb4419eb6b29d469712c, type: 3}
-  - {fileID: 4900000, guid: 544fd57275a362741a992d111566384a, type: 3}
+  - {fileID: 4900000, guid: 7b32b09c4735c1c4e8325ee403e11895, type: 3}
+  promptsFile:
+  - {fileID: 4900000, guid: 17fa03d156c1a47459f73080a35a3d50, type: 3}
+  - {fileID: 4900000, guid: c5ec2ff67a4d2f443a2adf0afaf25fb6, type: 3}
+  - {fileID: 4900000, guid: 85f07d2a7a9992845aadd10a34cd7768, type: 3}
+  - {fileID: 4900000, guid: e8fa04968f9b59245ad5fde196e8634d, type: 3}
+  - {fileID: 4900000, guid: adef8cf22f738774c88f37beb6385289, type: 3}
+  - {fileID: 4900000, guid: ebc46852c4a8b804fb74b044528a8d9c, type: 3}
+  - {fileID: 4900000, guid: 5a4381d00e006344082ae9df4291c516, type: 3}
   arrayWords: []

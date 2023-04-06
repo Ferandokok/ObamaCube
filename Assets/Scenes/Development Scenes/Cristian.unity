@@ -12741,7 +12741,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "onderzoek naar online maken. \nlobby scene.\ntext file naar een list."
+  m_text: "onderzoek naar online maken. \nlobby scene.\ntext file naar een list.\nhelped
+    with GDD.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
   m_sharedMaterial: {fileID: 1194104980888164860, guid: ec6ff820650fd2549a7ca79855be02a5, type: 2}
